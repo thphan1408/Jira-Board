@@ -5,31 +5,16 @@ export default {
     './src/**/*.{js,ts,jsx,tsx}',
     'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        // Màu xám nhạt
-        lightGray: '#f4f5f7',
-        // Màu xanh dương
-        blue: '#0747a6',
-        // Màu xanh nước biển
-        aquamarine: '#A0E9FF',
-        // Màu xanh nhạt
-        paleGreen: '#CDF5FD',
-        // Màu trắng
-        white: '#FFFFFF',
-        // Màu đen
-        black: '#000000',
-        // Màu chữ
-        fontColor: '#42526e',
-        blueGray: '#1c63ce',
-
-        // active background color
-        grayActive: 'rgba(var(--background-gray-active) / 1)',
-        // active font color
-        fontActive: 'rgba(var(--font-color-active) / 1)',
+        primary: '#635fc7',
+        secondary: '#ff6363',
+        third: '#364e7e1a',
+        dark: '#20212c',
       },
     },
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('flowbite/plugin'), require('tailwind-scrollbar-hide')],
 }
